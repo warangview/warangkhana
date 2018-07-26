@@ -1,0 +1,46 @@
+@(P1 : Add)
+<html>
+    <head>
+            <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <!-- Bootstrap CSS -->
+        <title>Add Produce</title>
+        <title>รายการสิน้คาที่เพิ่ม</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        @header()
+        <center>
+            <h1>ข้อมูลสินที่เพิ่มเข้ามา</h1>
+            <table border="1" class="table" style="font-size:18px">
+                <tr>
+                    <th>รหัสสินค้า</th>
+                    <td>@P1.getId</td>
+                </tr>
+
+                <tr>
+                    <th>ชื่อสินค้า</th>
+                    <td>@P1.getName</td>
+                </tr>
+
+                <tr>
+                    <th>ยี่ห้อสินค้า</th>
+                    <td>@P1.getBrand</td>
+                </tr>
+
+                <tr>
+                    <th>ราคาสินค้า</th>
+                    <td>@P1.getPrice</td>
+                </tr>
+
+                <tr>
+                    <th>สินค้าคงเหลือ</th>
+                    <td>@P1.getAmount</td>
+                </tr>
+
+            </table>
+        </center>
+    </body>
+</html>

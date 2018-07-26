@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .container {
+        position: relative;
+        width: 50%;
+        }
+
+        .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+
+        .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #008CBA;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        -webkit-transform:scale(0);
+        transition: .3s ease;
+        }
+
+        .container:hover .overlay {
+        transform: scale(1)
+        }
+
+        .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        }
+        * {box-sizing: border-box}
+        body {font-family: "Lato", sans-serif;}
+
+        /* Style the tab */
+        .tab {
+        float: left;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        width: 30%;
+        height: 300px;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+        background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+        background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+        float: left;
+        padding: 0px 12px;
+        border: 1px solid #ccc;
+        width: 70%;
+        border-left: none;
+        height: 300px;
+        }
+        </style>
+        <title>YAMAHA</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        @header()
+<p align="center"><u>COLORS สี Yamaha YZF-R1</u></p>
+    <p align="center"><u>YAMAHA YZF-R1 มีให้เลือก 3 สี ได้แก่ 1. สีแดง 2. สีดำ 3. สีน้ำเงิน</u></p>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><h3>สีแดง</h3></button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')"><h3>สีดำ</h3></button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')"><h3>สีน้ำเงิน</h3></button>
+    </div>
+
+    <div id="London" class="tabcontent">
+        <div class="row">
+            <div class="col-sm-6"><img src="/assets/images/Yamaha-R1-static-2.jpg"
+            width="500" height="290"></div>
+            <div class="col-sm-6"><p align="center">****Yamaha YZF-R1 < สีแดง >****</p>
+                Yamaha YZF-R1 2014 นั่นทำให้คนที่ได้ทดลองขับแล้วหลงรักมานักต่อนักแล้ว เพราะว่าเป็นรถที่มีรอบจัดแบบถึงใจมากๆ เร่งได้ดั่งใจทุกช่วงจังหวะ
+                ขับแล้วให้อารมณ์ที่มันสุดอย่างบอกไม่ถูก แต่ก็ยังมีอย่างหนึ่งที่ใครได้ทราบแล้วจะต้องรู้สึกอึ้งเป็นอย่างมากเลย นั่นก็คือเครื่องยนต์ที่พร้อมจะพาคุณ
+                เข้าสู้เส้นชัยเป็นที่หนึ่งได้อย่างเหนือชั้น ด้วยเครื่องยนต์ 4 จังหวะ ขนาด 998 ซีซี แบบ 4 สูบเรียง 16 วาล์ว DOHC พร้อมด้วยเกียร์ถึง 6 สปีด
+                อัตราเร่ง 12.7:1 เรียกว่าขับลื่น แซงแบบมั่นใจกันเลยทีเดียว มอเตอร์ไซค์สปอร์ตคันนี้ใช้เครื่องยนต์ที่มีระบบระบายความร้อนด้วยน้ำและเสริมความเย็น
+                เข้าไปอีกด้วยระบบ พัดลมไฟฟ้า การออกตัวทำได้อย่างรวดเร็วเพราะว่าเป็นระบบสตาร์ทด้วยมอเตอร์ไฟฟ้านั่นเอง</div>
+        </div>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <div class="row">
+            <div class="col-sm-6"><img src="/assets/images/img29.jpg"
+            width="500" height="290"></div>
+            <div class="col-sm-6"><p align="center">****Yamaha YZF-R1 < สีดำ >****</p>
+                รถ Yamaha YZF-R1 2014 นั้นนอกจากจะมาพร้อมกับเครื่องยนต์ที่แรงทะลุฟ้าแล้ว ตัวรถยังถูกออกแบบมาได้เฉียบสุดยอด
+                ทำให้โดนใจคนชอบรถสไตล์สปอร์ตยิ่งนัก การออกแบบเท่เหนือใครทั้งลวดลายและทรงของตัวรถนั้นเฉียบตั้งแต่ไฟหน้าจรดปลายท่อ
+                และจุดเด่นอีกแห่งหนึ่งที่ทำให้นักแข่งชื่นชอบในรถรุ่นนี้นั้นก็คือ ระบบกันสะเทือนแบบหัวกลับที่เรียกว่า “เทเลสโคปิค”
+                ที่ได้รับการออกแบบมาให้มีความนุ่มนวล รับน้ำหนักได้อย่างลงตัวเพราะทำมาจากโครเมี่ยมคุณภาพและมีขนาดใหญ่ถึง 43 มิลลิเมตร
+                ช่วยทรงตัวในยามเข้าโค้งได้เป็นอย่างดี</div>
+        </div>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <div class="row">
+            <div class="col-sm-6"><img src="/assets/images/maxresdefault.jpg"
+            width="500" height="290"></div>
+            <div class="col-sm-6"><p align="center">****Yamaha YZF-R1 < สีน้ำเงิน >****</p>
+                สเปคที่น่าสนใจในส่วนอื่นๆ ของ Yamaha YZF-R1 2014 ได้แก่ ระบบกันสะเทือนด้านหลังถูกรับหน้าที่นี้โดยช็อคอับเดี่ยว,
+                ระบบเบรกด้านหน้าเป็นดิสก์เบรกคู่ขนาดใหญ่ขนาบข้างด้วยคาลิเปอร์ดิสก์ละ 3 ลูกสูบ ให้คุณได้เบรกอย่างมั่นใจเพราะเป็นระบบเบรกแบบไฮดรอลิค,
+                ส่วนเบรกหลังก็คงไม่ใช่อื่นไกลนอกจากดิสก์เบรกเดี่ยวที่ถูกขนาบข้างด้วยคาลิเปอร์ 1 ลูกสูบ จะว่าไปข้อมูลรายละเอียดปลีกย่อยก็มีมากมายเหลือเกิน
+                ครั้นจะเขียนให้หมดก็กลัวคุณผู้อ่านจะสับสนกันไปซะเปล่าๆ เราไปดูตารางคุณสมบัติของรถที่ด้านล่างนี้กันดีกว่า</div>
+        </div>
+    </div>
+
+    <script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+        <!--------------------------##----------------------------------------------------->
+        <div class="container-fluid">
+
+            <h5><p align="center">**********************************************************************************</p></h5>
+            <br><h3><p align="center"><img src="/assets/images/L.jpg" height="50" width="1450"></p></h3><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="container">
+                            <img src="/assets/images/c1.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text">Yamaha YZF-R1 ยังมาพร้อมกับ Air Intake ขนาดใหญ่
+                                    ที่ถูกออกแบบให้มีขนาดใหญ่ถึง 10.5 ลิตร เพื่อการควบคุมการจ่ายอากาศที่แม่นยำ
+                                    โดยเฉพาะในช่วงรอบจัด</div>
+                            </div>
+                        </div>
+                            <div class="caption">
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="container">
+                            <img src="/assets/images/c2.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text">มีระบบ Communication Control Unit (CCU)
+                                    ทำงานร่วมกับ GPS เพื่อแสดงข้อมูลต่างๆเกี่ยวกับ Lap Time ข้อมูลการขับขี่อื่นๆ
+                                    ที่สามารถแสดงผลบนแท็ปเลตทั่วไปได้เพราะโปรแกรมนี้ทำงานบนระบบปฎิบัติการ Android</div>
+                            </div>
+                        </div>
+                            <div class="caption">
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="container">
+                            <img src="/assets/images/c3.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text">เครื่องยนต์ 4 สูบเรียง Crossplane ถือเป็นเอกสิทธิ์เฉพาะของ R1
+                                    ที่ใช้การจุดระเบิดแบบเดียวกับตัวแข่ง M1 ที่เรียกว่า Crossplane Firing Order โดยเป็น Crossplane
+                                    นับองศาแบบไปข้างหน้า (Forward) </div>
+                            </div>
+                        </div>
+                            <div class="caption">
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="container">
+                            <img src="/assets/images/c4.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text"> ห้องเผาไหม้ยังถูกออกแบบให้มีอัตราส่วนกำลังอัดสูงถึง 13:1 (เดิม 12.7:1)
+                                    ผลิตม้าออกมา 200 ตัวโดยปราศจากการใช้ระบบอัดอากาศใดๆ (Ram Air Pressurization System)</div>
+                            </div>
+                        </div>
+                        <div class="caption">
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="container">
+                            <img src="/assets/images/c5.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text">ได้มีการเปลี่ยนสวิงอาร์มมาเป็นแบบ Upper Bracing Swing-Arm
+                                    แบบเดิมจากก่อนหน้านี้ที่เป็น Lower Bracing</div>
+                            </div>
+                        </div>
+                        <div class="caption">
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="container">
+                            <img src="/assets/images/c6.jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                                <div class="text">ระบบ ERS จะรับข้อมูลมาจาก IMU 6-แกน เพื่อมาประมวลผลระบบที่เรียกว่า
+                                    Suspension Control Unit (SCU) เพื่อปรับระยะยุบตัวของโช๊คอีกที ว่ากันว่าระบบนี้ช่วยให้การเบรคมีเสถียรภาพมากขึ้น</div>
+                            </div>
+                        </div>
+                        <div class="caption">
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-----------------##--------------------------->
+                <p align="center"><h2>Specification รายละเอียด</h2></p>
+            <div class="row">
+                <div class="col-sm-4" style="background-color:lavender;">
+                    <h5>รุ่น <br>
+                    เครื่องยนต์<br>
+                    ขนาดเครื่องยนต์<br>
+                    แบบเครื่องยนต์<br>
+                    ความกว้างกระบอกสูบ x ช่วงชัก<br>
+                    อัตราส่วนแรงอัด<br>
+                    ระบบเกียร์<br>
+                        ระบบระบายความร้อน<br>
+                    ระบบสตาร์ท<br>
+                    ระบบจุดระเบิด<br>
+                    ระบบกันสะเทือน หน้า<br>
+                        ระบบกันสะเทือน หลัง<br>
+                    ระบบเบรก หน้า<br>
+                    ระบบเบรก หลัง<br>
+                    แบบวงล้อ<br>
+                    ขนาดยาง หน้า<br>
+                    ขนาดยาง หลัง<br>
+                    ความยาวxความกว้างxความสูง<br>
+                    น้ำหนัก<br>
+                    ประเภทน้ำมันเชื้อเพลิง<br>
+                    ระบบจ่ายน้ำมันเชื้อเพลิง<br>
+                    ความจุน้ำมันเชื้อเพลิง<br></h5>
+                </div>
+                <div class="col-sm-8" style="background-color:lavenderblush;">
+                    <h5>Yamaha YZF R1 <br>
+                    DOHC 4 วาล์ว/สูบ (titanium intake valve)<br>
+                    998.00 cc.<br>
+                    4 จังหวะ<br>
+                    78.0 x 52.2mm<br>
+                    12.7:1<br>
+                    เกียร์ธรรมดา / 6 เกียร์ Multiplate Slipper Clutch<br>
+                    ระบายความร้อนด้วยน้ำ<br>
+                    สตาร์ทไฟฟ้า (มือ)<br>
+                    TCI (Transistor Controlled Ignition)<br>
+                    43mm inverted fork; fully adjustable<br>
+                    Single shock w/Piggyback reservoir; 4-way adjustable<br>
+                    ดิสก์เบรกคู่ พร้อมคาลิปเปอร์ 6 จุด<br>
+                    ดิสก์เบรก พร้อมคาลิปเปอร์<br>
+                    ล้อแม็ก<br>
+                    120/70-ZR17<br>
+                    190/55-ZR17<br>
+                    2,070 x 715 x 1,130 มม.<br>
+                    212.00 กก.<br>
+                    เบนซิน 91<br>
+                    หัวฉีด (Fuel injection with YCC-T and YCC-I)<br>
+                    18 ลิตร</h5>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>

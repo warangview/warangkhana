@@ -1,0 +1,276 @@
+@(ya1:Yamaha, ya2:Yamaha,ya3:Yamaha,ya4:Yamaha,ya5:Yamaha,ya6:Yamaha,
+        rya1:Yamaha, rya2:Yamaha,rya3:Yamaha,rya4:Yamaha,rya5:Yamaha,rya6:Yamaha,
+bya1:Yamaha,bya2:Yamaha,bya3:Yamaha,bya4:Yamaha,bya5:Yamaha,bya6:Yamaha)
+
+<html>
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+           <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <style>
+       * {box-sizing: border-box}
+       body {font-family: "Lato", sans-serif;}
+
+       /* Style the tab */
+       .tab {
+       float: left;
+       border: 1px solid #ccc;
+       background-color: #f1f1f1;
+       width: 30%;
+       height: 800px;   <!------ความยาวของเมนู-------->
+       }
+
+       /* Style the buttons inside the tab */
+       .tab button {
+       display: block;
+       background-color: inherit;
+       color: black;
+       padding: 22px 30px;
+       width: 100%;
+       border: none;
+       outline: none;
+       text-align: left;
+       cursor: pointer;
+       transition: 0.3s;
+       font-size: 17px;
+       }
+
+       /* Change background color of buttons on hover */
+       .tab button:hover {
+       background-color: #ddd;
+       }
+
+       /* Create an active/current "tab button" class */
+       .tab button.active {
+       background-color: #ccc;
+       }
+
+       /* Style the tab content */
+       .tabcontent {
+       float: left;
+       padding: 0px 12px;
+       border: 0px solid #ccc;
+       width: 70%;
+       border-left: none;
+       height: 300px;
+       }
+       </style>
+   </head>
+    <body>
+        @header()
+<!-------------------------------------------------------------------------------------->
+       <br> <h2><p align="center">**Products**</p></h2>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><h2>สีดำ</h2></button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')"><h2>สีแดง</h2></button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><h2>สีน้ำเงิน</h2></button>
+        </div>
+<!----------------ข้อมูลที่หนึ่ง------------->
+        <div id="London" class="tabcontent">
+            <div class="row">
+                <div class="col-sm-6">
+                    @ya1.getId<br>
+                    @ya1.getName<br>
+                    @ya1.getBrand<br>
+                    @ya1.getPrice<br>
+                    <tr>
+                    <td><img src="/assets/images/b1.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @ya2.getId<br>
+                    @ya2.getName<br>
+                    @ya2.getBrand<br>
+                    @ya2.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/03.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @ya3.getId<br>
+                    @ya3.getName<br>
+                    @ya3.getBrand<br>
+                    @ya3.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/j.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @ya4.getId<br>
+                    @ya4.getName<br>
+                    @ya4.getBrand<br>
+                    @ya4.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/kol.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @ya5.getId<br>
+                    @ya5.getName<br>
+                    @ya5.getBrand<br>
+                    @ya5.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/b2.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @ya6.getId<br>
+                    @ya6.getName<br>
+                    @ya6.getBrand<br>
+                    @ya6.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/02.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+            </div>
+        </div>
+<!-------------------ข้อมูลที่สอง---------->
+        <div id="Paris" class="tabcontent">
+            <div class="row">
+                <div class="col-sm-6">
+                    @rya1.getId<br>
+                    @rya1.getName<br>
+                    @rya1.getBrand<br>
+                    @rya1.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/rr1.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @rya2.getId<br>
+                    @rya2.getName<br>
+                    @rya2.getBrand<br>
+                    @rya2.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/rr2.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @rya3.getId<br>
+                    @rya3.getName<br>
+                    @rya3.getBrand<br>
+                    @rya3.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/rr3.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @rya4.getId<br>
+                    @rya4.getName<br>
+                    @rya4.getBrand<br>
+                    @rya4.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/rr4.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @rya5.getId<br>
+                    @rya5.getName<br>
+                    @rya5.getBrand<br>
+                    @rya5.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/rr5.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @rya6.getId<br>
+                    @rya6.getName<br>
+                    @rya6.getBrand<br>
+                    @rya6.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/rr6.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+            </div>
+        </div>
+<!-------------------ข้อมูลที่สาม----------->
+        <div id="Tokyo" class="tabcontent">
+            <div class="row">
+                <div class="col-sm-6">
+                    @bya1.getId<br>
+                    @bya1.getName<br>
+                    @bya1.getBrand<br>
+                    @bya1.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/t1.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @bya2.getId<br>
+                    @bya2.getName<br>
+                    @bya2.getBrand<br>
+                    @bya2.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/t2.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @bya3.getId<br>
+                    @bya3.getName<br>
+                    @bya3.getBrand<br>
+                    @bya3.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/t3.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @bya4.getId<br>
+                    @bya4.getName<br>
+                    @bya4.getBrand<br>
+                    @bya4.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/t4.jpg" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @bya5.getId<br>
+                    @bya5.getName<br>
+                    @bya5.getBrand<br>
+                    @bya5.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/t5.png" width="350" height="200"></td>
+                    </tr>
+                </div>
+                <div class="col-sm-6">
+                    @bya6.getId<br>
+                    @bya6.getName<br>
+                    @bya6.getBrand<br>
+                    @bya6.getPrice<br>
+                    <tr>
+                        <td><img src="/assets/images/t6.png" width="350" height="200"></td>
+                    </tr>
+                </div>
+            </div>
+        </div>
+
+
+<!------------------------------------------------------------->
+        <script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+    </body>
+</html>
+
+
